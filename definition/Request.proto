@@ -1,0 +1,14 @@
+package org.shu.zq.nettyprotoc.exchange;
+
+option java_package = "org.shu.zq.nettyprotoc.exchange";
+
+option java_outer_classname = "Protocol";
+
+message Request {
+    required int32 id = 1;
+    required string msg = 2;
+}
+
+message Response {
+    required string msg = 1;
+}
